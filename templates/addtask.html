@@ -3,18 +3,28 @@
 
 <div class="row">
     <form action='' method='POST' class="col s12">
+        <!-- Task Name -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
-                <input id="task_name" name='task_name' type="text">
+                <input id="task_name" name='task_name' type="text" class="validate">
                 <label for="icon_prefix">Task Name</label>
             </div>
         </div>
+        <!-- Task Description -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
                 <textarea name='task_description' id='task_description' class='materialize-textarea'></textarea>
                 <label for="icon_telephone">Task Description</label>
+            </div>
+        </div>
+        <!-- Date Picker -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">today</i>
+                <input id="due_date" name='due_date' type="text" class="datepicker">
+                <label for="icon_prefix">Due Date</label>
             </div>
         </div>
         <!-- Switch -->
